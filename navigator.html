@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="first">
+		<div class="container">
+			<div class="menu">
+				<nav>
+				  	<ul> 
+				    	<li class="activemenu"><a href="index.html"> Home</a></li>
+				    	<li><a href="#">Course</a>
+				      		<ul class="dropdown">
+				        		<li><a target="_blank" href="https://learn.zybooks.com/">Zybook</a></li>
+				        		<li><a target="_blank" href="https://tophat.com/">TopHat</a></li>
+				        		<li><a target="_blank" href="https://www.w3.org/">W3C</a></li>
+				        		<li><a target="_blank" href="https://drive.google.com/drive/folders/1DJYcquLa7z83dMEDOl3up6VJQiXykQUs">Google Drive</a></li>
+				      		</ul>
+				    	</li>
+			   		 	<li><a href="#">Search</a>
+				    		<ul class="dropdown">
+				        		<li><a href="from-file.html">From File</a></li>
+				        		<li><a href="google-api.html">Google API</a></li>
+				      		</ul>
+			      		</li>
+			      		
+				      	<li><a href="#">Browse</a>
+				    		<ul class="dropdown">
+				        		<li><a href="navigator.html">Navigator</a></li>
+				        		<li><a href="window.html">Window</a></li>
+				        		<li><a href="screen.html">Screen</a></li>
+				        		<li><a href="location.html">Location</a></li>
+				        		<li><a href="geolocation.html">GeoLocation</a></li>
+				      		</ul>
+				      	</li>
+				      	<li><a href="#">About</a>
+				    		<ul class="dropdown">
+				        		<li><a href="about.html">About Develpoer</a></li>
+				        		<li><a href="contact.html">Contact Us</a></li>
+				      		</ul>
+				      	</li>
+				  	</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+		</div>		
+	</div>
+
+	
+	<div class="navigator">
+		<div class="container">
+			<h3>Navigator</h3>
+			<div id="results">
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="assets/js/jquery.min.js"></script>
+
+<script>
+var txt = "";
+txt += "<p>App Name: " + navigator.appName + "</p>";
+txt += "<p></p>"
+txt += "<p>App Version: " + navigator.appVersion + "</p>";
+txt += "<p></p>"
+txt += "<p>Browser Language: " + navigator.language + "</p>";
+txt += "<p></p>"
+txt += "<p>Platform: " + navigator.platform + "</p>";
+txt += "<p></p>"
+txt += "<p>User-agent: " + navigator.userAgent + "</p>";
+txt += "<p></p>"
+
+document.getElementById("results").innerHTML = txt;
+</script>
+
+
+	</script>
+
+
+</body>
+</html>
